@@ -4,7 +4,7 @@
     --nuetro-gris: rgb(143, 148, 167);
     --nuetro-blue-deep: rgb(29, 30, 37);
     --nuetro-red: rgb(255, 239, 234);
-    --nuetro-gris-ligth: rgb(249, 249, 249);
+    --nuetro-gris-ligth: rgb(250, 250, 250);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--nuetro-gris-ligth);
+    background: #fff;
 }
 
 a {
@@ -54,14 +54,16 @@ h2, h3, h4 {
     color: var(--main-blue);
 }
 
+/* HEADER AND NAV */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 75px 0;
+    margin: 4.68rem 0;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     gap: 28px;
 }
@@ -84,6 +86,16 @@ header ul a {
     max-width: 1110px;
     padding: 0 2rem;
 }
+
+.container-fluid {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* INTRO */
 
 .row {
     display: flex;
@@ -109,6 +121,8 @@ header ul a {
 
 }
 
+/* ABOUT */
+
 .about {
     align-items: start;
 }
@@ -131,4 +145,94 @@ header ul a {
     color: var(--nuetro-gris);
     padding: 1rem 0 2rem 4.5rem;
 
+}
+
+/* TESTIMONIO */
+
+.testimony h2 {
+    font-size: 2.4rem;
+}
+
+.testimony {
+    text-align: center;
+}
+
+.cards {
+    margin-top: 4.68rem;
+    margin-bottom: 2.8rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    max-width: 445px;
+    text-align: center;
+    background: var(--nuetro-gris-ligth);
+    position: relative;
+    padding: 3.5rem 1.3rem 2.4rem 1.3rem;
+}
+
+.card h5 {
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-blue);
+}
+
+.card img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+}
+
+.card p {
+    color: #B9B9C1;
+}
+
+/* Simplify */
+.simplify {
+    background: var(--main-orange);
+    margin-top: 6rem;
+    padding: 4rem 0;
+}
+
+.simplify h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.simplify .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simplify .btn {
+    background: #fff;
+    color: var(--main-orange);
+    min-width: 148px;
+
+}
+
+/* FOOTER */
+
+footer {
+    background: #1E1E26;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-social ul {
+    display: flex;
 }
