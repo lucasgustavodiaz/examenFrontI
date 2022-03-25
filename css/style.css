@@ -54,11 +54,16 @@ h2, h3, h4 {
     color: var(--main-blue);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 /* HEADER AND NAV */
 
 header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 4.68rem 0;
 }
@@ -85,11 +90,12 @@ header ul a {
     width: 100%;
     max-width: 1110px;
     padding: 0 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .container-fluid {
     width: 100%;
-    padding: 0 2rem;
     display: flex;
     justify-content: center;
 
@@ -98,8 +104,6 @@ header ul a {
 /* INTRO */
 
 .row {
-    display: flex;
-    align-items: center;
     margin-bottom: 8rem;
     gap: 3rem;
 }
@@ -148,6 +152,10 @@ header ul a {
 }
 
 /* TESTIMONIO */
+
+.testimony.container-fluid {
+    padding: 0 2rem;
+}
 
 .testimony h2 {
     font-size: 2.4rem;
@@ -206,9 +214,7 @@ header ul a {
 }
 
 .simplify .container {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .simplify .btn {
@@ -229,10 +235,49 @@ footer a {
 }
 
 footer .container {
+    padding: 4rem 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
 
-.logos-social ul {
+.redes-nav {
+
+    flex: 1;
+}
+
+.logo-social>img {
+    padding-bottom: 4rem;
+}
+
+.social ul {
     display: flex;
+    gap: 13px;
+}
+
+footer nav ul li {
+    padding-bottom: 14px;
+}
+
+footer p {
+    width: 100%;
+    color: var(--nuetro-gris);
+    text-align: right;
+    font-size: 12px;
+}
+
+footer input {
+    width: 201px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+footer button {
+    height: 44px;
+    border: none;
+    outline: none;
+    margin-left: 6px;
 }
