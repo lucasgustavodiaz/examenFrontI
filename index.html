@@ -10,12 +10,16 @@
 </head>
 
 <body>
+    <div class="wrap-img">
+        <div class="bg-img"></div>
+    </div>
     <header class="container">
         <div class="logo">
             <h1>manage</h1>
             <img src="./img/logo.svg" alt="Logo Site">
         </div>
-        <nav>
+        <nav class="navegacion">
+            <a href="#" class="toggle"></a>
             <ul>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Product</a></li>
@@ -28,7 +32,7 @@
     </header>
     <main>
         <!-- Intro -->
-        <section class="row container">
+        <section class="row container intro">
             <div class="col">
                 <h2>Bring everyone together to build better products.</h2>
                 <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view</p>
@@ -69,6 +73,10 @@
             </div>
         </section>
 
+        <div class="wrap-img">
+            <div class="bg-img-2"></div>
+        </div>
+
         <!-- Testimonios -->
         <section class="testimony container-fluid">
             <div>
@@ -96,7 +104,9 @@
 
         <!-- Simplify -->
         <section class="simplify container-fluid">
+
             <div class="container">
+                <div class="bg-simplify"></div>
                 <h2>Simplify hoy your team words today.</h2>
                 <a href="#" class="btn">Get Starterd</a>
             </div>
@@ -118,28 +128,42 @@
                     </ul>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About Us</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-            </nav>
-            <div>
-                <input type="text">
-                <button class="btn">Go</button>
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </nav>
             </div>
+            <form action="" class="input" method="get">
+                <label for="email">email</label>
+                <input name="email" type="email" placeholder="email">
+                <button class="btn" type="submit">Go</button>
+            </form>
             <p>Copyright 2020. All Rights Reserved</p>
         </div>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle')
+        console.log(toggle)
+        const navUL = document.querySelector('nav.navegacion ul')
+        console.log(navUL)
+        toggle.addEventListener('click', () => {
+            navUL.classList.toggle('open')
+            toggle.classList.toggle('open')
+        })
+    </script>
 
 </body>
 
