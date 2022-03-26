@@ -246,6 +246,7 @@ header ul a:hover {
 .owl-theme .owl-dots .owl-dot span {
     border: 1.5px solid var(--main-orange);
     background: none;
+    transition: background 0.2s;
 }
 
 .card-head {
