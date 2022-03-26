@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 a {
@@ -40,10 +39,12 @@ h1 {
 
 h2 {
     font-size: 3.625rem;
+    line-height: 4.1rem;
 }
 
 h3 {
     font-size: 2.25rem;
+    line-height: 2.56rem;
 }
 
 h4 {
@@ -52,6 +53,10 @@ h4 {
 
 h2, h3, h4 {
     color: var(--main-blue);
+}
+
+p {
+    line-height: 1.6rem;
 }
 
 main {
@@ -210,6 +215,7 @@ header ul a:hover {
 
 .testimony h2 {
     font-size: 2.4rem;
+    line-height: 3rem;
 }
 
 .testimony {
@@ -277,6 +283,7 @@ header ul a:hover {
     font-weight: 700;
     color: #fff;
     max-width: 450px;
+    line-height: 3rem;
 }
 
 .simplify .container {
