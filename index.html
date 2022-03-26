@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2dd35a25e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Examen Practico Final - FE1</title>
 </head>
@@ -82,27 +84,40 @@
 
         <!-- Testimonios -->
         <section class="testimony container-fluid">
-            <div>
-                <h2>What they´ve said</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="./img/avatar-anisha.png" alt="Foto Anisha">
+
+            <h2>What they´ve said</h2>
+
+            <div class="owl-carousel owl-theme">
+                <div class="card">
+                    <div class="card-head"><img src="./img/avatar-anisha.png" alt=""></div>
+                    <div class="card-body">
                         <h5>Anisha Li</h5>
                         <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                     </div>
-                    <div class="card">
-                        <img src="./img/avatar-ali.png" alt="Foto Ali">
+                </div>
+                <div class="card">
+                    <div class="card-head"><img src="./img/avatar-ali.png" alt=""></div>
+                    <div class="card-body">
                         <h5>Ali Bravo Li</h5>
                         <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                     </div>
-                    <div class="card">
-                        <img src="./img/avatar-richard.png" alt="Foto Richard">
+                </div>
+                <div class="card">
+                    <div class="card-head"><img src="./img/avatar-richard.png" alt="Foto Richard"></div>
+                    <div class="card-body">
                         <h5>Richard Watts</h5>
                         <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                     </div>
                 </div>
-                <a href="#" class="btn">Get Starterd</a>
+                <div class="card">
+                    <div class="card-head"><img src="./img/avatar-shanai.png" alt="Foto Richard"></div>
+                    <div class="card-body">
+                        <h5>Shanai Pilson</h5>
+                        <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                    </div>
+                </div>
             </div>
+            <a href="#" class="btn">Get Starterd</a>
         </section>
 
         <!-- Simplify -->
@@ -152,21 +167,15 @@
                 <input name="email" type="email" placeholder="Update in your inbox">
                 <button class="btn" type="submit">Go</button>
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p>Copyright
+                <script>document.write(new Date().getFullYear())</script>. All Rights Reserved
+            </p>
         </div>
     </footer>
 
-    <script>
-        const toggle = document.querySelector('.toggle')
-        console.log(toggle)
-        const navUL = document.querySelector('nav.navegacion ul')
-        console.log(navUL)
-        toggle.addEventListener('click', () => {
-            navUL.classList.toggle('open')
-            toggle.classList.toggle('open')
-        })
-    </script>
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

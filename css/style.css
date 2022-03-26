@@ -154,7 +154,7 @@ header ul a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 /* INTRO */
@@ -220,6 +220,7 @@ header ul a:hover {
 
 .testimony {
     text-align: center;
+    flex-direction: column;
 }
 
 .cards {
@@ -229,12 +230,33 @@ header ul a:hover {
     gap: 2rem;
 }
 
-.card {
-    max-width: 445px;
-    text-align: center;
-    background: var(--nuetro-gris-ligth);
+.owl-carousel.owl-theme {
+    margin-top: 2.5rem;
+    margin-bottom: 2.8rem;
+}
+
+.owl-carousel .owl-item img {
+    width: 70px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--main-orange);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    border: 1.5px solid var(--main-orange);
+    background: none;
+}
+
+.card-head {
+    height: 35px;
     position: relative;
+}
+
+.card-body {
+    text-align: center;
     padding: 3.5rem 1.3rem 2.4rem 1.3rem;
+    background: var(--nuetro-gris-ligth);
 }
 
 .card h5 {
@@ -249,7 +271,7 @@ header ul a:hover {
     width: 70px;
     height: 70px;
     left: 50%;
-    top: -35px;
+    top: 0;
     transform: translateX(-50%);
 }
 
