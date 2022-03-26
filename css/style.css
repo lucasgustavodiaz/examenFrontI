@@ -441,7 +441,7 @@ a.toggle {
         display: none;
     }
 
-    .row.container.intro {
+    .container.row.intro {
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -450,7 +450,7 @@ a.toggle {
         padding: 0;
     }
 
-    .row.container.about {
+    .container.row.about {
         flex-direction: column;
         text-align: center;
         margin-bottom: 4rem;
@@ -472,7 +472,7 @@ a.toggle {
     }
 
     .simplify .container {
-        margin-top: 6rem;
+        padding: 3rem 2rem;
         flex-direction: column;
     }
 
